@@ -4,7 +4,7 @@ import {ReactComponent as ListIcon} from '../../../assets/list-all.svg';
 
 function AllLists() {
     return (
-        <AllListsLink to="/">
+        <AllListsLink to="/lists">
             <ListIcon/>
             <span>Все списки</span>
         </AllListsLink>

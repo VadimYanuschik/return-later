@@ -1,11 +1,87 @@
 {
-  "users": [{
+  "lists": [{
     "id": 1,
-    "name": "roy",
-    "location": "india"
+    "name": "Фильмы",
+    "color": "red",
+    "items": [
+      {
+        "id": 1,
+        "text": "Маяк",
+        "completed": false
+      }, {
+        "id": 2,
+        "text": "Гарри Поттер",
+        "completed": false
+      }, {
+        "id": 3,
+        "text": "Мстители",
+        "completed": false
+      }
+    ]
   }, {
     "id": 2,
-    "name": "sam",
-    "location": "wales"
+    "name": "Сериалы",
+    "color": "green",
+    "items": [
+      {
+        "id": 1,
+        "text": "Рим",
+        "completed": false
+      }, {
+        "id": 2,
+        "text": "Побег",
+        "completed": false
+      }, {
+        "id": 3,
+        "text": "Во все тяжкие",
+        "completed": false
+      }
+    ]
+  }, {
+    "id": 3,
+    "name": "Книги",
+    "color": "yellow",
+    "items": [
+      {
+        "id": 1,
+        "text": "Библия",
+        "completed": false
+      }, {
+        "id": 2,
+        "text": "Пикник на обочине",
+        "completed": false
+      }, {
+        "id": 3,
+        "text": "Золотой жук",
+        "completed": false
+      }
+    ]
+  }, {
+    "id": 4,
+    "name": "Страны",
+    "color": "red",
+    "items": []
+  }],
+  "colors": [{
+    "id": 1,
+    "color": "red"
+  }, {
+    "id": 2,
+    "color": "orange"
+  }, {
+    "id": 3,
+    "color": "yellow"
+  }, {
+    "id": 4,
+    "color": "green"
+  }, {
+    "id": 5,
+    "color": "purple"
+  }, {
+    "id": 6,
+    "color": "aqua"
+  }, {
+    "id": 7,
+    "color": "gray"
   }]
 }

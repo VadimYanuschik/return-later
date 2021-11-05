@@ -5,12 +5,12 @@ import AllLists from './AllLists/AllLists.component';
 import List from './List/List.component';
 import AddList from './AddList/AddList.component';
 
-function Sidebar() {
+function Sidebar({lists}) {
     return (
         <SidebarContainer>
             <Header/>
             <AllLists/>
-            <List/>
+            <List lists={lists}/>
             <AddList/>
         </SidebarContainer>
     )

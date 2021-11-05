@@ -1,30 +1,18 @@
 import React from 'react';
 import {ListContainer, ListDot, LinkStyled, CrossIconSvg} from './List.styles';
+import ListColorModal from '../ListColorModal/ListColorModal.component';
 
-function List() {
+function List({lists}) {
     return (
         <ListContainer>
-            <LinkStyled to="/">
-                <ListDot color={"red"}/>
-                Фильмы
-                <CrossIconSvg/>
-            </LinkStyled>
-            <LinkStyled to="/">
-                <ListDot color={"blue"}/>
-                Сериалы
-                <CrossIconSvg/>
-            </LinkStyled>
-            <LinkStyled to="/">
-                <ListDot color={"green"}/>
-                Книги
-                <CrossIconSvg/>
-            </LinkStyled>
-            <LinkStyled to="/">
-                <ListDot color={"yellow"}/>
-                Страны для а также большой текс
-                путешествий
-                <CrossIconSvg/>
-            </LinkStyled>
+            {lists.map(item => (
+                <LinkStyled key={item.id} to={`/lists/${item.id}`}>
+                    <ListDot color={item.color}/>
+                    {item.name}
+                    <CrossIconSvg/>
+                </LinkStyled>
+            ))}
+            {/*<ListColorModal/>*/}
         </ListContainer>
     )
 }
