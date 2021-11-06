@@ -1,9 +1,9 @@
 import React from 'react';
 import {ButtonContainer} from './Button.styles';
 
-function Button({text, color, size}) {
+function Button({text, color, size, outline}) {
     return (
-        <ButtonContainer type="button" value={text} color={color} size={size}/>
+        <ButtonContainer type="button" outline={outline} value={text} color={color} size={size}/>
     )
 }
 

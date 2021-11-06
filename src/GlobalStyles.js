@@ -19,6 +19,9 @@ const GlobalStyles = createGlobalStyle`
       text-decoration: none;
       color: ${props => props.theme.colors.black}
     }
+    .App {
+      display: flex;
+    }
 `
 
 export default GlobalStyles
